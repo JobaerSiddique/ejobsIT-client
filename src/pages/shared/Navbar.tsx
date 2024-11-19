@@ -30,9 +30,9 @@ const menuItems = <>
   <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-red-500 transition-all duration-300 group-hover:w-full"
   ></span>
 </Link>
-<Link to="/contact"
+<Link to="/about-us"
   className="relative text-gray-600 hover:text-black font-semibold group">
-  Login
+  About-Us
   <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-red-500 transition-all duration-300 group-hover:w-full"
   ></span>
 </Link>

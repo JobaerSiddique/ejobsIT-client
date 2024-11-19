@@ -77,7 +77,7 @@ const Contact = () => {
            </section>
 
            {/* address section about eJobsIT */}
-           <h1 className="text-xl lg:text-6xl text-center font-bold mt-16">Find Us Here</h1>
+           <h1 className="text-xl lg:text-4xl text-center font-bold mt-16 bg-gradient-to-r from-blue-500 to-cyan-500  text-transparent bg-clip-text">Find Us Here</h1>
            <section className="py-4 bg-gradient-to-r from-blue-50 to-cyan-50 sm:py-8 lg:py-16 rounded-sm shadow-2xl my-16">
           
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 justify-center items-center gap-16 p-16">
@@ -152,6 +152,11 @@ const Contact = () => {
       </div>
     </section>
 
+
+        {/* add google map location */}
+        <section className="my-10 ">
+        <iframe className="w-[80%] h-[500px] mx-auto" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d138588.10398860104!2d90.26379695307254!3d23.780919352730375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka!5e1!3m2!1sen!2sbd!4v1732001289328!5m2!1sen!2sbd"    loading="lazy" ></iframe>
+        </section>
         </>
     );
 };
