@@ -6,7 +6,11 @@ import { Card, CardContent,CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { FaArrowRight } from "react-icons/fa6";
-
+import { motion } from "framer-motion";
+import { HiOutlineOfficeBuilding } from "react-icons/hi";
+import { BsPersonWorkspace } from "react-icons/bs";
+import { FaPhone } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
 const Contact = () => {
     return (
         <>
@@ -73,9 +77,81 @@ const Contact = () => {
            </section>
 
            {/* address section about eJobsIT */}
-           <section className="py-4  bg-gradient-to-r from-blue-50 to-cyan-50  sm:py-8 lg:py-16 rounded-sm shadow-2xl my-16">
+           <h1 className="text-xl lg:text-6xl text-center font-bold mt-16">Find Us Here</h1>
+           <section className="py-4 bg-gradient-to-r from-blue-50 to-cyan-50 sm:py-8 lg:py-16 rounded-sm shadow-2xl my-16">
+          
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 justify-center items-center gap-16 p-16">
+        {/* Card 1 */}
+        <motion.div
+          className="flex justify-center"
+          whileHover={{ scale: 1.1 }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          <Card className="w-[350px] p-16 flex justify-center items-center shadow-2xl">
+            <i className="text-4xl text-green-600 border border-lime-500 p-2 rounded-md">
+              <HiOutlineOfficeBuilding />
+            </i>
+            <p className="ml-5">
+              Dhaka,{" "}
+              <span className="bg-gradient-to-r from-green-700 to-red-500 text-transparent bg-clip-text font-bold">
+                Bangladesh
+              </span>
+            </p>
+          </Card>
+        </motion.div>
 
-           </section>
+        {/* Card 2 */}
+        <motion.div
+          className="flex justify-center"
+          whileHover={{ scale: 1.1 }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          <Card className="w-[350px] p-16 flex justify-center items-center shadow-2xl">
+            <i className="text-4xl text-green-600 border border-lime-500 p-2 rounded-md">
+              <FaPhone />
+            </i>
+            <p className="ml-5">01730481212</p>
+          </Card>
+        </motion.div>
+
+        {/* Card 3 */}
+        <motion.div
+          className="flex justify-center"
+          whileHover={{ scale: 1.1 }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+        >
+          <Card className="w-[350px] p-16 flex justify-center items-center shadow-2xl">
+            <i className="text-4xl text-green-600 border border-lime-500 p-2 rounded-md">
+              <BsPersonWorkspace />
+            </i>
+            <p className="ml-5 text-center">24 Hours Support <span>Our Teams</span></p>
+          </Card>
+        </motion.div>
+
+        {/* Card 4 */}
+        <motion.div
+          className="flex justify-center"
+          whileHover={{ scale: 1.1 }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <Card className="w-[350px] p-16 flex justify-center items-center shadow-2xl">
+            <i className="text-4xl text-green-600 border border-lime-500 p-2 rounded-md">
+              <MdEmail />
+            </i>
+            <p className="ml-5">ejobsIt@example.com</p>
+          </Card>
+        </motion.div>
+      </div>
+    </section>
+
         </>
     );
 };
