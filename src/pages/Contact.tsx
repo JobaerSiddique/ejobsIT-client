@@ -78,7 +78,7 @@ const Contact = () => {
 
            {/* address section about eJobsIT */}
            <h1 className="text-xl lg:text-4xl text-center font-bold mt-16 bg-gradient-to-r from-blue-500 to-cyan-500  text-transparent bg-clip-text">Find Us Here</h1>
-           <section className="py-4 bg-gradient-to-r from-blue-50 to-cyan-50 sm:py-8 lg:py-16 rounded-sm shadow-2xl my-16">
+           <section className="py-4 bg-gradient-to-r from-blue-50 to-cyan-50 sm:py-8 lg:py-16 rounded-xl shadow-2xl my-16">
           
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 justify-center items-center gap-16 p-16">
         {/* Card 1 */}

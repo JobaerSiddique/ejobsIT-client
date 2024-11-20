@@ -6,53 +6,33 @@ import { Card } from "@/components/ui/card";
 const AboutUs = () => {
   return (
     <>
+    <div >
+
+ 
+    
  <motion.div
-        className="text-center mb-12 mt-10"
+        className=" mb-12 mt-10"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-    <Card className="my-10 shadow-2xl p-5">
-   
-        <h1 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-blue-500 my-8">
+        <div className="p-4">
+        <h1 className="text-2xl   lg:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-blue-500 my-16">
           About eJobs IT
         </h1>
-        <p className="mt-4 text-lg  p-4 mx-auto text-justify font-semibold">
-        At eJobs IT, we are passionate about empowering businesses and individuals to thrive in the
- digital world. We offer comprehensive digital services, including website development, social
- media setup, and content creation to help businesses establish a strong and engaging online
- presence. Our team works closely with you to design customized websites and social media
- profiles that reflect your brand and effectively connect with your target audience. We also create
- high-quality promotional videos, graphics designs, and content writing services that help
- businesses effectively communicate their message and engage with customers.
- In addition to our business services, we offer a range of professional training programs to
- prepare individuals for successful careers in digital content creation and freelancing. Our
- signature Our Zero to Hero Freelancer Course is a one-year, two-semester program that takes
- students from foundational skills in essential software to advanced content creation techniques.
- Through this program, we ensure students gain hands-on experience and practical skills that
- prepare them for freelancing opportunities.
- eJobs IT is also proud to offer two signature courses that have made a big impact in
- Bangladesh’s digital training space: the Advanced Motion Graphics Course (Motion Boss)
- and the Advanced Video Editing Course (Editing Master). With over 10,000 students
- enrolled, these courses are designed to deliver expert-level training in motion graphics and
- video editing, helping our students become leaders in their fields.
- To accommodate various learning styles, we offer flexible online live classes as well as
- pre-recorded courses in graphics design, video editing, motion graphics, web
- development, and 3D animation. Whether students prefer the interactivity of live sessions or
- the freedom of self-paced study, we’re committed to delivering high-quality education that fits
- their needs.
- eJobs IT is led by Ahsanullah Shaon, a skilled Video Editor & Motion Graphics Designer
- currently working with Darul Arqam Educational Trust, UK. Shaon also contributes his
- expertise as an Instructor Resource Person for the Post Graduate Diploma (PGD) program
- at National University, Bangladesh. With a clear vision to uplift and guide others in digital
- content creation, Shaon ensures that eJobs IT remains dedicated to excellence, innovation, and
- community support. Connect with him on YouTube and Facebook.
- At eJobs IT, we believe in the transformative power of digital skills, and we’re here to support
- every step of your journey, whether you're a business looking to enhance your online presence
- or a student aiming to build a thriving career.
+   
+   
+        
+        <p className="lg:w-3/5 mt-4  text-gray-500   font-semibold">
+        At eJobs IT, we empower businesses and individuals to thrive in the digital age. Our services include custom website development, social media setup, and high-quality content creation to help brands establish a strong online presence.
+
+For aspiring professionals, we offer industry-leading training programs, including the renowned Zero to Hero Freelancer Course, Motion Boss (Advanced Motion Graphics), and Editing Master (Advanced Video Editing). With over 10,000 students trained, our courses provide hands-on expertise in motion graphics, video editing, web development, and more through flexible live or pre-recorded classes.
+
+Led by Ahsanullah Shaon, a seasoned Video Editor and Motion Graphics Designer, eJobs IT is dedicated to innovation, excellence, and community growth. Join us and transform your digital potential into success!
         </p>
+        </div>
      
-    </Card>
+    
     </motion.div>
 
 
@@ -175,6 +155,54 @@ const AboutUs = () => {
           Contact Us Today
         </button>
       </motion.div>
+    </section>
+    </div>
+
+    {/* department section */}
+    <section className="my-16">
+      <h1 className="text-2xl lg:text-4xl mt-32 font-black text-center">
+        Our Training Departments
+      </h1>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-16 justify-center items-center my-14 p-4">
+        {/* First Card */}
+        <motion.div
+          className="shadow-2xl"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, ease: "easeInOut" }}
+          whileHover={{ scale: 1.05 }}
+        >
+          <img
+            src="https://i.ibb.co/ZSZZkMd/course-1662552115.jpg"
+            alt="Motion Graphics"
+            className="rounded-t-lg"
+          />
+          <h1 className="text-center my-10 font-mono text-xl lg:text-2xl">
+            Motion Graphics
+          </h1>
+        </motion.div>
+
+        {/* Second Card */}
+        <motion.div
+          className="shadow-2xl"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, ease: "easeInOut", delay: 0.2 }}
+          whileHover={{ scale: 1.05 }}
+        >
+          <img
+            src="https://i.ibb.co/mFPstB0/course-1674371266.jpg"
+            alt="Frontend Development with React"
+            className="rounded-t-lg"
+          />
+          <h1 className="text-center my-10 font-mono text-xl lg:text-2xl">
+            Frontend Development with React
+          </h1>
+        </motion.div>
+      </div>
     </section>
     </>
   );

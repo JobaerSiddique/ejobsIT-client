@@ -40,7 +40,7 @@ const menuItems = <>
 </>
 
   return (
-    <header className="border-b shadow-md  bg-gradient-to-r from-cyan-100 to-blue-100  hover:bg-gradient-to-l top-0 z-50">
+    <header className="sticky border-b shadow-md  bg-gradient-to-r from-cyan-100 to-blue-100  hover:bg-gradient-to-l top-0 z-50">
       <div className="container mx-auto flex items-center justify-between p-4">
         {/* Logo */}
         <div className="text-xl font-bold">
